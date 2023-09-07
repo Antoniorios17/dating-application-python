@@ -1,6 +1,6 @@
 import json
 import requests
-import headers
+import keys
 
 print("Welcome to the date simulator")
 name = input("what is your name")
@@ -11,7 +11,7 @@ import requests
 url = "https://the-cocktail-db3.p.rapidapi.com/"
 
 
-response = requests.get(url, headers=headers.headers)
+response = requests.get(url, headers=keys.headers)
 
 data = response.json()
 
