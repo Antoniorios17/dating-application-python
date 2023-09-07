@@ -4,3 +4,4 @@ __pycache__/
 # Ignore the file that is storing the API keys
 headers.py
 
+*.pyc 
