@@ -16,3 +16,5 @@ response = requests.get(url, headers=keys.headers)
 data = response.json()
 
 print(data)
+
+# show the menu
