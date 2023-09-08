@@ -17,4 +17,18 @@ data = response.json()
 
 print(data)
 
+# welcome statement
+# print("Welcome to the date simulator")
+
+# name of customer
+name = input("what is your name")
+
+# name of date
+
+date_name = input("What is your date's name")
+
+# set budget
+
 # show the menu
+
+#
