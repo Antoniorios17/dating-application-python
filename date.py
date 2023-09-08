@@ -1,12 +1,10 @@
 import json
 import requests
-import keys
+import keys #importing the api keys from another local file
 
 print("Welcome to the date simulator")
 name = input("what is your name")
 date_name = input("What is your date's name")
-
-import requests
 
 url = "https://the-cocktail-db3.p.rapidapi.com/"
 
@@ -30,5 +28,11 @@ date_name = input("What is your date's name")
 # set budget
 
 # show the menu
+  # show selection of random 5 drinks
+  # randomize prices of all the drinks
+  # reduce budget by drink price
 
-#
+
+# function to track wellness of date
+
+# 
