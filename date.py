@@ -2,16 +2,7 @@ import json
 import requests
 import keys #importing the api keys from another local file
 from random import randint as r
-
-url = "https://the-cocktail-db3.p.rapidapi.com/"
-
-
-response = requests.get(url, headers=keys.headers)
-
-data = response.json()
-
-# print(data)
-
+import api
 
 # welcome statement
 print("Welcome to the date simulator\n")
