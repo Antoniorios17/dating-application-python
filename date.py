@@ -13,7 +13,7 @@ print("Welcome to the date simulator\n")
 
 
 # set budget
-
+budget = input("Please insert your budget: ")
 # show the menu
   
   # randomize prices of all the drinks
