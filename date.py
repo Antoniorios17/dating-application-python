@@ -41,6 +41,9 @@ def get_menu():
 get_menu()
 
 # randomize prices of all the drinks
+def price_per_drink(price):
+    price = r(10,15)
+    return price
 
 
 
