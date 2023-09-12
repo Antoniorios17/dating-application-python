@@ -44,10 +44,10 @@ get_menu()
 def reduce_budget():
     print("")
     selection = input("Please select an item from the menu: ")
-    price = randint(15,25)
+    price = randint(15,25)*2
     print(f'You selected {menu[selection]} and the price for both is ${price}')
     global budget
-    budget = budget - price*2
+    budget = budget - price
     print(f"Your budget is now ${budget}")  
     global belly_meter
     belly_meter = belly_meter + 2
@@ -60,14 +60,18 @@ reduce_budget()
 while True:
     choice = input("Would you like to order more? (yes/no) ").strip().lower()
     if choice[0] == "y":
+        print("")
         get_menu()
+        print("")
         reduce_budget()
     elif choice[0] == 'n':
         print(f"Thank you for coming {name} and {date_name}")
         if belly_meter > 10:
             print(f"{date_name} had too much food")
             print(f'Sorry {name}, you are not getting a second date')
+            break
         elif belly_meter > 2 and belly_meter < 6:
             print(f'{date_name} had a great time and is satisfied')
             print(f'{name} you are getting a second date with {date_name}')
+            break
 
