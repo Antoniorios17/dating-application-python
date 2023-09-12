@@ -5,7 +5,7 @@ Welcome to the Date Simulator! This is a simple text-based Python program where 
 ## Getting Started
 
 1. Clone this repository to your local machine.
-2. Make sure you have Python 3.x installed.
+2. Make sure you have Python 3.10x installed.
 
 ## Usage
 
