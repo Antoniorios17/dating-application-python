@@ -11,8 +11,14 @@ Welcome to the Date Simulator! This is a simple text-based Python program where 
 
 1. Run the Python script:
 
-Follow the prompts:
-Enter your name and your date's name.
-Set your budget.
-Select items from the menu.
-Decide if you want to order more or end the date.
+- Follow the prompts:
+- Enter your name and your date's name.
+- Set your budget.
+- Select items from the menu.
+- Decide if you want to order more or end the date.
+
+## Features
+
+- Randomly generated food menu from the Punk API.
+- Budget tracking.
+- Wellness tracking for your date.
