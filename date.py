@@ -13,6 +13,8 @@ date_name = input("What is your date's name: ").capitalize()
 print("")
 print(f"****** Welcome {name} and {date_name}! *******\n")
 
+# amount of food in stomach rated to 10
+belly_meter = 0
 
 # set budget
 budget = int(input("Please insert your budget: \n"))
@@ -42,11 +44,13 @@ get_menu()
 def reduce_budget():
     print("")
     selection = input("Please select an item from the menu: ")
-    price = randint(15,30)
-    print(f'You selected {menu[selection]} and the price is ${price}')
+    price = randint(15,25)
+    print(f'You selected {menu[selection]} and the price for both is ${price}')
     global budget
-    budget = budget - price
+    budget = budget - price*2
     print(f"Your budget is now ${budget}")  
+    global belly_meter
+    belly_meter = belly_meter + 2
 
 reduce_budget()
 
@@ -60,5 +64,10 @@ while True:
         reduce_budget()
     elif choice[0] == 'n':
         print(f"Thank you for coming {name} and {date_name}")
-        break
+        if belly_meter > 10:
+            print(f"{date_name} had too much food")
+            print(f'Sorry {name}, you are not getting a second date')
+        elif belly_meter > 2 and belly_meter < 6:
+            print(f'{date_name} had a great time and is satisfied')
+            print(f'{name} you are getting a second date with {date_name}')
 
