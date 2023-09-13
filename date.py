@@ -20,6 +20,7 @@ belly_meter = 0
 budget = int(input("Please insert your budget: \n"))
 
 # show the menu
+# get random selection of n items in this case 6 but can be updated as 
 
 def get_menu():
     url = "https://api.punkapi.com/v2/beers"
@@ -28,7 +29,7 @@ def get_menu():
     counter = 0
     global menu
     menu = {}
-    while counter < 6:
+    while counter < 6: #you can modify the 6 to increase the number of items shown in the menu
         counter +=1
         food_selection = random.choice(data[randint(0,len(data)-1)]["food_pairing"])
         menu[str(counter)]= food_selection
